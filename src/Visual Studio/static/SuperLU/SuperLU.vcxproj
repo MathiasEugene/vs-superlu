@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{DF2ED306-CFFE-4C88-A009-A9CBD2E75081}</ProjectGuid>
+    <RootNamespace>SuperLU</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SuperLU\SRC</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SuperLU\SRC</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SuperLU\SRC</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SuperLU\SRC</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SuperLU\SRC\ccolumn_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ccolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ccopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cdiagonal.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgscon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgsequ.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgsisx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgsitrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgsrfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgssv.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgssvx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgstrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cgstrs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\clacon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\clacon2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\clangs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\claqgs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cldperm.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cmemory.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cmyblas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\colamd.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cpanel_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cpanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cpivotgrowth.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cpivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cpruneL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\creadhb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\creadrb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\creadtriple.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\csnode_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\csnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\csp_blas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\csp_blas3.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\cutil.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dcolumn_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dcolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dcomplex.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dcopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ddiagonal.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgscon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgsequ.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgsisx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgsitrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgsrfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgssv.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgssvx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgstrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dgstrs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dlacon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dlacon2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dlangs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dlaqgs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dldperm.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dmach.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dmemory.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dmyblas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dpanel_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dpanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dpivotgrowth.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dpivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dpruneL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dreadhb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dreadrb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dreadtriple.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dsnode_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dsnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dsp_blas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dsp_blas3.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dutil.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\dzsum1.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\get_perm_c.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\heap_relax_snode.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\icmax1.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_ccolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_ccopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_cdrop_row.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_cpanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_cpivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_csnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_dcolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_dcopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_ddrop_row.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_dpanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_dpivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_dsnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_heap_relax_snode.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_relax_snode.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_scolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_scopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_sdrop_row.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_spanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_spivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_ssnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_zcolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_zcopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_zdrop_row.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_zpanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_zpivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ilu_zsnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\input_error.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\izmax1.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\mark_relax.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\mc64ad.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\memory.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\mmd.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\qselect.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\relax_snode.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\scolumn_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\scolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\scomplex.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\scopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\scsum1.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sdiagonal.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgscon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgsequ.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgsisx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgsitrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgsrfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgssv.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgssvx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgstrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sgstrs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\slacon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\slacon2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\slangs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\slaqgs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sldperm.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\smach.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\smemory.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\smyblas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\spanel_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\spanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\spivotgrowth.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\spivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\spruneL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sp_coletree.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sp_ienv.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sp_preorder.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sreadhb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sreadrb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sreadtriple.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ssnode_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ssnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ssp_blas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\ssp_blas3.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\superlu_timer.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\sutil.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\util.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zcolumn_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zcolumn_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zcopy_to_ucol.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zdiagonal.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgscon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgsequ.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgsisx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgsitrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgsrfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgssv.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgssvx.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgstrf.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zgstrs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zlacon.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zlacon2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zlangs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zlaqgs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zldperm.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zmemory.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zmyblas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zpanel_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zpanel_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zpivotgrowth.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zpivotL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zpruneL.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zreadhb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zreadrb.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zreadtriple.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zsnode_bmod.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zsnode_dfs.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zsp_blas2.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zsp_blas3.c" />
+    <ClCompile Include="..\..\..\SuperLU\SRC\zutil.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
