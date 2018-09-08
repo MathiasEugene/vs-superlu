@@ -7,8 +7,6 @@ mgmt clean
 mgmt clean -default =  Remove unused files from SuperLU
 mgmt clean -build   =  Remove build artifacts (obj files etc.)
 mgmt clean -docs    =  Remove docs from SuperLU
-mgmt clean -tests   =  Remove tests from SuperLU
-mgmt clean -matlab  =  Remove MATLAB files from SuperLU
 mgmt clean -all     =  Combines all above options
 
 mgmt update
