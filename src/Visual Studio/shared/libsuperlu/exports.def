@@ -30,6 +30,16 @@ EXPORTS
     Destroy_SuperNode_Matrix
     Destroy_CompCol_Permuted
     Destroy_Dense_Matrix
+    sp_preorder
+    sp_ienv
+    cgstrf
+    dgstrf
+    sgstrf
+    zgstrf
+    cgstrs
+    dgstrs
+    sgstrs
+    zgstrs
     cgssv
     dgssv
     sgssv
