@@ -1,10 +1,46 @@
 LIBRARY libsuperlu
 EXPORTS
+    intMalloc
+    floatMalloc
+    complexMalloc
+    doubleMalloc
+    doublecomplexMalloc
+    superlu_malloc
+    superlu_free
+    superlu_abort_and_exit
     StatInit
     StatFree
-    get_perm_c
+    StatPrint
     set_default_options
     ilu_set_default_options
+    cGenXtrue
+    dGenXtrue
+    sGenXtrue
+    zGenXtrue
+    cFillRHS
+    dFillRHS
+    sFillRHS
+    zFillRHS
+    cinf_norm_error
+    dinf_norm_error
+    sinf_norm_error
+    zinf_norm_error
+    cQuerySpace
+    dQuerySpace
+    sQuerySpace
+    zQuerySpace
+    creadhb
+    dreadhb
+    sreadhb
+    zreadhb
+    creadrb
+    dreadrb
+    sreadrb
+    zreadrb
+    creadtriple
+    dreadtriple
+    sreadtriple
+    zreadtriple
     cCreate_CompCol_Matrix
     dCreate_CompCol_Matrix
     sCreate_CompCol_Matrix
@@ -13,6 +49,14 @@ EXPORTS
     dCreate_CompRow_Matrix
     sCreate_CompRow_Matrix
     zCreate_CompRow_Matrix
+    cCopy_CompCol_Matrix
+    dCopy_CompCol_Matrix
+    sCopy_CompCol_Matrix
+    zCopy_CompCol_Matrix
+    cCreate_Dense_Matrix
+    dCreate_Dense_Matrix
+    sCreate_Dense_Matrix
+    zCreate_Dense_Matrix
     cCreate_SuperNode_Matrix
     dCreate_SuperNode_Matrix
     sCreate_SuperNode_Matrix
@@ -21,21 +65,22 @@ EXPORTS
     dCompRow_to_CompCol
     sCompRow_to_CompCol
     zCompRow_to_CompCol
-    cCreate_Dense_Matrix
-    dCreate_Dense_Matrix
-    sCreate_Dense_Matrix
-    zCreate_Dense_Matrix
     Destroy_SuperMatrix_Store
     Destroy_CompCol_Matrix
     Destroy_SuperNode_Matrix
     Destroy_CompCol_Permuted
     Destroy_Dense_Matrix
-    sp_preorder
+    get_perm_c
     sp_ienv
+    sp_preorder
     cgstrf
     dgstrf
     sgstrf
     zgstrf
+    cgsitrf
+    dgsitrf
+    sgsitrf
+    zgsitrf
     cgstrs
     dgstrs
     sgstrs
@@ -56,3 +101,11 @@ EXPORTS
     dgscon
     sgscon
     zgscon
+    cgsequ
+    dgsequ
+    sgsequ
+    zgsequ
+    claqgs
+    dlaqgs
+    slaqgs
+    zlaqgs
