@@ -1,10 +1,12 @@
 # SuperLU for Visual Studio
 
-This is a Visual Studio solution for [SuperLU](http://crd-legacy.lbl.gov/~xiaoye/SuperLU/).
+This is a Visual Studio solution for [SuperLU](https://github.com/xiaoyeli/superlu).
 
 ## Instructions
 
-The repository does not contain the SuperLU source code. It can be obtained from http://crd-legacy.lbl.gov/~xiaoye/SuperLU/#superlu. The Visual Studio solution was created for SuperLU version [5.2.1](http://crd-legacy.lbl.gov/~xiaoye/SuperLU/superlu_5.2.1.tar.gz), but should also work with newer versions. Download the latest version and extract it to the `src` folder (a subfolder `SuperLU_5.2.1` should be created automatically, rename it to `SuperLU`). To check if everything is in its right place, make sure that the file `src/SuperLU/README` exists.
+The repository does not contain the SuperLU source code. It can be obtained from https://github.com/xiaoyeli/superlu. The Visual Studio solution was created for SuperLU version [5.2.1](https://github.com/xiaoyeli/superlu/archive/v5.2.1.zip), but should also work with newer versions. Download the latest version and extract it to the `src` folder (a subfolder should be created automatically, rename it to `SuperLU`). To check if everything is in its right place, make sure that the file `src/SuperLU/README` exists.
+
+Pre-compiled binaries for windows users can be found [here](http://wo80.bplaced.net/math/packages.html).
 
 ## Why?
 
