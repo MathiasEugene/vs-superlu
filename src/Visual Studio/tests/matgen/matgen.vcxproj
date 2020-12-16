@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{fa981133-0593-48bd-a9f8-a02b0b2b03f4}</ProjectGuid>
+    <RootNamespace>matgen</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)SuperLU\TESTING\MATGEN;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)SuperLU\TESTING\MATGEN;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(SolutionDir)SuperLU\TESTING\MATGEN;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(SolutionDir)SuperLU\TESTING\MATGEN;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)$(Configuration)\$(PlatformTarget)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\cdotc.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clacgv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clagge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\claghe.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clagsy.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clarge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clarnd.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clarnv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\claror.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clarot.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clartg.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\claset.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clatb4.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clatm2.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clatm3.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clatme.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\clatms.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\csymv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlabad.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlagge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlagsy.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlaran.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlarge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlarnd.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlarnv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlaror.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlarot.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlartg.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlaruv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlaset.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlatb4.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlatm1.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlatm2.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlatm3.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\dlatms.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\d_lg10.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\d_sign.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\pow_dd.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\pow_di.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\pow_ri.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\r_lg10.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\r_sign.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slabad.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slagge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slagsy.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slaran.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slarge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slarnd.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slarnv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slaror.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slarot.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slartg.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slaruv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slaset.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slatb4.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slatm1.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slatm2.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slatm3.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\slatms.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zdotc.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlacgv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlagge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlaghe.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlagsy.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlarge.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlarnd.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlarnv.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlaror.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlarot.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlartg.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlaset.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlatb4.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlatm2.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlatm3.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zlatms.c" />
+    <ClCompile Include="..\..\..\SuperLU\TESTING\MATGEN\zsymv.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

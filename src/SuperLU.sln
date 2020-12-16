@@ -45,6 +45,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlinsol1", "Visual Studio\e
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "zlinsolx3", "Visual Studio\examples\zlinsolx3.vcxproj", "{B0A75F4B-061A-450D-8DD0-11187A5155BA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{22E1F28D-53D1-4563-9D72-7C3699DE4C68}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "matgen", "Visual Studio\tests\matgen\matgen.vcxproj", "{FA981133-0593-48BD-A9F8-A02B0B2B03F4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -181,6 +185,14 @@ Global
 		{B0A75F4B-061A-450D-8DD0-11187A5155BA}.Release|x64.Build.0 = Release|x64
 		{B0A75F4B-061A-450D-8DD0-11187A5155BA}.Release|x86.ActiveCfg = Release|Win32
 		{B0A75F4B-061A-450D-8DD0-11187A5155BA}.Release|x86.Build.0 = Release|Win32
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Debug|x64.ActiveCfg = Debug|x64
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Debug|x64.Build.0 = Debug|x64
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Debug|x86.ActiveCfg = Debug|Win32
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Debug|x86.Build.0 = Debug|Win32
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Release|x64.ActiveCfg = Release|x64
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Release|x64.Build.0 = Release|x64
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Release|x86.ActiveCfg = Release|Win32
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -202,6 +214,7 @@ Global
 		{982991BD-7324-4C53-9808-D08B460B8D20} = {56C6DD2A-98B1-4AF7-AFBD-5DE371454E33}
 		{8B95F155-04C0-468A-8ABF-11F6DD3FD647} = {56C6DD2A-98B1-4AF7-AFBD-5DE371454E33}
 		{B0A75F4B-061A-450D-8DD0-11187A5155BA} = {56C6DD2A-98B1-4AF7-AFBD-5DE371454E33}
+		{FA981133-0593-48BD-A9F8-A02B0B2B03F4} = {22E1F28D-53D1-4563-9D72-7C3699DE4C68}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F3221A93-5157-4934-AA9E-0F57FE3CF538}
