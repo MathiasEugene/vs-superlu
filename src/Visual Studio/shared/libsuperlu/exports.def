@@ -8,6 +8,7 @@ EXPORTS
     superlu_malloc
     superlu_free
     superlu_abort_and_exit
+    SuperLU_timer_
     StatInit
     StatFree
     StatPrint
@@ -17,6 +18,10 @@ EXPORTS
     dGenXtrue
     sGenXtrue
     zGenXtrue
+    cfill_diag
+    dfill_diag
+    sfill_diag
+    zfill_diag
     cFillRHS
     dFillRHS
     sFillRHS
@@ -73,6 +78,10 @@ EXPORTS
     get_perm_c
     sp_ienv
     sp_preorder
+    sp_cgemv
+    sp_dgemv
+    sp_sgemv
+    sp_zgemv
     cgstrf
     dgstrf
     sgstrf
