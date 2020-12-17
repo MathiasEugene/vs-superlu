@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\SuperLU\EXAMPLE\clinsolx3.c">
+    <ClCompile Include="..\..\SuperLU\EXAMPLE\clinsolx3.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

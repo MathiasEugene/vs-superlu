@@ -163,8 +163,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\SuperLU\EXAMPLE\sfgmr.c" />
-    <ClCompile Include="..\..\..\SuperLU\EXAMPLE\sitersol1.c" />
+    <ClCompile Include="..\..\SuperLU\EXAMPLE\sfgmr.c" />
+    <ClCompile Include="..\..\SuperLU\EXAMPLE\sitersol1.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

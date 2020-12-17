@@ -54,9 +54,6 @@
     <ClCompile Include="..\..\..\SuperLU\SRC\cgstrs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\SuperLU\SRC\clacon.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\SuperLU\SRC\clacon2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -157,9 +154,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SuperLU\SRC\dgstrs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\SuperLU\SRC\dlacon.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SuperLU\SRC\dlacon2.c">
@@ -381,9 +375,6 @@
     <ClCompile Include="..\..\..\SuperLU\SRC\sgstrs.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\SuperLU\SRC\slacon.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\..\SuperLU\SRC\slacon2.c">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -496,9 +487,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SuperLU\SRC\zgstrs.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\..\SuperLU\SRC\zlacon.c">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\..\..\SuperLU\SRC\zlacon2.c">
