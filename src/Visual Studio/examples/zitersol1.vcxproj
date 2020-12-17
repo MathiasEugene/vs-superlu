@@ -163,9 +163,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\SuperLU\EXAMPLE\zfgmr.c" />
-    <ClCompile Include="..\..\..\SuperLU\EXAMPLE\zitersol1.c" />
-    <ClCompile Include="..\..\..\SuperLU\SRC\dcomplex.c" />
+    <ClCompile Include="..\..\SuperLU\EXAMPLE\zfgmr.c" />
+    <ClCompile Include="..\..\SuperLU\EXAMPLE\zitersol1.c" />
+    <ClCompile Include="..\..\SuperLU\SRC\dcomplex.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

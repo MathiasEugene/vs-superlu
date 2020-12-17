@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\SuperLU\EXAMPLE\zitersol1.c">
+    <ClCompile Include="..\..\SuperLU\EXAMPLE\zitersol1.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\SuperLU\EXAMPLE\zfgmr.c">
+    <ClCompile Include="..\..\SuperLU\EXAMPLE\zfgmr.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\SuperLU\SRC\dcomplex.c">
+    <ClCompile Include="..\..\SuperLU\SRC\dcomplex.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

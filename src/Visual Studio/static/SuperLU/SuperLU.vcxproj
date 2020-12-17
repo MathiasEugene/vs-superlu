@@ -147,7 +147,6 @@
     <ClCompile Include="..\..\..\SuperLU\SRC\cgssvx.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\cgstrf.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\cgstrs.c" />
-    <ClCompile Include="..\..\..\SuperLU\SRC\clacon.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\clacon2.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\clangs.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\claqgs.c" />
@@ -182,7 +181,6 @@
     <ClCompile Include="..\..\..\SuperLU\SRC\dgssvx.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\dgstrf.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\dgstrs.c" />
-    <ClCompile Include="..\..\..\SuperLU\SRC\dlacon.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\dlacon2.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\dlangs.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\dlaqgs.c" />
@@ -256,7 +254,6 @@
     <ClCompile Include="..\..\..\SuperLU\SRC\sgssvx.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\sgstrf.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\sgstrs.c" />
-    <ClCompile Include="..\..\..\SuperLU\SRC\slacon.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\slacon2.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\slangs.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\slaqgs.c" />
@@ -295,7 +292,6 @@
     <ClCompile Include="..\..\..\SuperLU\SRC\zgssvx.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\zgstrf.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\zgstrs.c" />
-    <ClCompile Include="..\..\..\SuperLU\SRC\zlacon.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\zlacon2.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\zlangs.c" />
     <ClCompile Include="..\..\..\SuperLU\SRC\zlaqgs.c" />
